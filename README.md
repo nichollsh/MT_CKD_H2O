@@ -80,5 +80,5 @@ With their suffixes indicating the corresponding temperature.
 These can be created in the SOCRATES format using the NetCDF files produced from the compiled MTCKD executable. Conversion is performed with
 
 ```bash
-python ckd_to_socrates.py
+python ckd_to_socrates.py mt_ckd_h2o_output.nc mt_ckd3p3_s296
 ```
