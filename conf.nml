@@ -1,0 +1,8 @@
+&mt_ckd_input
+	p_atm=1000.
+	t_atm=296.
+	h2o_frac= 0.00990098
+	wv1=1.0
+	wv2=10000.
+	dwv=1.0
+/

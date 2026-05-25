@@ -50,6 +50,8 @@ INC_NETCDF = $(NCI)
 LDFLAG = -L$(LIB_NETCDF) -lnetcdff -lnetcdf $(ADDLIB)
 
 $(info "SRCS  :: $(SRCS)" )
+$(info "LIB_NETCDF :: $(LIB_NETCDF)")
+$(info "INC_NETCDF :: $(INC_NETCDF)")
 
 
 # Object file names

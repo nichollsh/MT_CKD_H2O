@@ -61,4 +61,24 @@ ln -s ../data/absco-ref_wv-mt-ckd.nc .
 ../mt_ckd_h2o_4.3_linux_gnu_dbl < mt_ckd.config
 ```
 
+* p_atm - atmospheric pressure for the calculation of continuum coefficients  (mbar) 
+* t_atm - atmospheric temperature for the calculation of continuum coefficients (K) 
+* h2o_vmr - fraction of the total number of molecules that are water vapor 
+* wv1 - initial wavenumber for which continuum coefficients will be computed (cm-1) 
+* wv2 - final wavenumber for which continuum coefficients will be computed (cm-1) 
+* dwv - wavenumber spacing for the continuum coefficient calculation (cm-1) 
+* radflag - (optional) if true, multiply by radiation term (default); if false, do not
 
+# SOCRATES
+
+Requires two files:
+* mt_ckd3p3_s296
+* mt_ckd3p3_s260
+
+With their suffixes indicating the corresponding temperature.
+
+These can be created in the SOCRATES format using the NetCDF files produced from the compiled MTCKD executable. Conversion is performed with
+
+```bash
+python ckd_to_socrates.py
+```
