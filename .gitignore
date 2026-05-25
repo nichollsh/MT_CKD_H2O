@@ -1,3 +1,5 @@
 *.mod
 *linux*
 *.o
+mt_ckd3*
+mt_ckd_*.nc

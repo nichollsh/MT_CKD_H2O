@@ -220,6 +220,12 @@ linuxGNUdbl:
 	FCFLAG="-fdefault-integer-8 -fdefault-real-8 -fdefault-double-8 -frecord-marker=4 -std=legacy" \
 	UTIL_FILE=util_gfortran.f90
 
+linuxHabrok:
+	${MAKE} -f ${MAKEFILE} all P_TYPE=dbl FC_TYPE=gnu PLTFRM=linux \
+	FC=gfortran  \
+	FCFLAG="-fdefault-integer-8 -fdefault-real-8 -fdefault-double-8 -frecord-marker=4 -std=legacy -I/cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/netCDF-Fortran/4.6.1-gompi-2023a/include -I/cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/netCDF-Fortran/4.6.1-gompi-2023a/include -L/cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/netCDF-Fortran/4.6.1-gompi-2023a/lib -lnetcdff -L/cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/bzip2/1.0.8-GCCcore-12.3.0/lib64 -L/cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/bzip2/1.0.8-GCCcore-12.3.0/lib -L/cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/netCDF/4.9.2-gompi-2023a/lib64 -L/cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/netCDF/4.9.2-gompi-2023a/lib -L/cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GCCcore/12.3.0/lib64 -L/cvmfs/hpc.rug.nl/versions/2023.01/rocky8/x86_64/amd/zen3/software/GCCcore/12.3.0/lib -lnetcdf -lnetcdf -ldl -lm -lm -lpthread" \
+	UTIL_FILE=util_gfortran.f90
+
 ##############################################################
 # linux using gfortran and single precisions
 ##############################################################
