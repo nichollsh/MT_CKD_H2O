@@ -77,8 +77,8 @@ Requires two files:
 
 With their suffixes indicating the corresponding temperature.
 
-These can be created in the SOCRATES format using the NetCDF files produced from the compiled MTCKD executable. Conversion is performed with
+These can be created in the SOCRATES format using the NetCDF files produced from the compiled MTCKD executable. Conversion is performed with the script `ckd_to_socrates.py`, which can convert all files in the current directory:
 
 ```bash
-python ckd_to_socrates.py mt_ckd_h2o_output.nc
+python ckd_to_socrates.py .
 ```
