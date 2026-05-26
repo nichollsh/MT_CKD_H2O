@@ -1,5 +1,8 @@
 *.mod
 *linux*
 *.o
+*plot.pdf
 mt_ckd3*
+mt_ckd4*
 mt_ckd_*.nc
+SOCRATES

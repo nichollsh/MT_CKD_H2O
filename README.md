@@ -72,13 +72,13 @@ ln -s ../data/absco-ref_wv-mt-ckd.nc .
 # SOCRATES
 
 Requires two files:
-* mt_ckd3p3_s296
-* mt_ckd3p3_s260
+* mt_ckd4p3_s296
+* mt_ckd4p3_s260
 
 With their suffixes indicating the corresponding temperature.
 
 These can be created in the SOCRATES format using the NetCDF files produced from the compiled MTCKD executable. Conversion is performed with
 
 ```bash
-python ckd_to_socrates.py mt_ckd_h2o_output.nc mt_ckd3p3_s296
+python ckd_to_socrates.py mt_ckd_h2o_output.nc
 ```
